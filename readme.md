@@ -31,9 +31,42 @@
 - [o] Dockerfile 작성 및 커스텀 이미지 빌드
 -     docker build -t my-web-server .
 -     docker images                      
-- [x] 포트 매핑 및 웹 서버 접속 확인
+- [o] 포트 매핑 및 웹 서버 접속 확인
 -     docker run -d -p 8080:80 --name my-web-container   -     my-web-server
 -     docker ps
 -     브라우져 확인 주소 : http://localhost:8080    
-- [x] 바인드 마운트 및 볼륨 영속성 검증
-- [x] Git 사용자 정보 설정 및 GitHub 연
+- [o] 바인드 마운트 및 볼륨 영속성 검증
+-     바인드 마운트
+-     mkdir test-folder
+-     cd test-folder
+-     docker run -it --name bind-test -v ${PWD}:/app alpine sh
+-     cd /app
+-     echo "Docker Bind Mount Success!" > hello-docker.txt ls
+-     exit
+-     docker rm bind-test
+-     볼륨
+-     ocker volume create my-data
+-     docker run -it --name vol-test-2 -v my-data:/data alpine
+-     cd /data
+-     echo "volume is working" > real-test.txt
+-     ls
+-     exit
+-    오늘 실습으로 증명한 사실
+-    컨테이너는 소모품이다: vol-test-2를 삭제(rm)했음에도 불구하고 데이터는 사라지지 않았습니다.
+-    데이터는 영구적이다: 도커가 관리하는 볼륨(my-data)에 저장했기 때문에, 새로운 컨테이너(vol-test-3)를 -    가져와서 연결만 하면 언제든 데이터를 다시 불러올 수 있습니다.
+-    바인드 마운트 vs 볼륨, 이제 차이가 느껴지시나요?
+-    바인드 마운트 (Bind Mount):
+-    내 컴퓨터의 특정 폴더를 통째로 연결.
+-    VS Code 탐색기에서 바로 보임.
+-    설정 파일이나 소스 코드를 실시간으로 수정할 때 주로 사용.
+-    볼륨 (Volume):
+-    도커가 관리하는 특별한 저장소를 연결.
+-    내 컴퓨터 탐색기에서는 안 보이지만, 도커가 훨씬 안전하게 관리함.
+-    데이터베이스(DB)의 데이터처럼 사용자가 직접 파일을 건드릴 필요는 없지만, 절대 사라지면 안 되는
+-    데이터를 저장할 때 주로 사용.
+
+
+- [o] Git 사용자 정보 설정 및 GitHub 연동
+-    git config --global user.name "student2026-11"
+-    git config --globla user.email "이메일주소"
+-    git config --list
