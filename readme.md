@@ -172,7 +172,10 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/student2026-11/my-workstation.git
    a5d03ea..dd89334  main -> main
 
+## 트러블 슈팅
+- 1.처음 디렉토리와 파일 생성시 파일 만들때 touch명령어를 썻으나 오류가 떠서 생성이 안됐음  -> 파워셀 환경에서 touch 인식이 되지 않아서 생긴 오류로 확인 되어 파워셀이 인식 가능한 ni명령어로 바꿔서 실행 했습니다
 
-
-
-
+- 2.Docker 설치 오류 "WSL 2 installation is incomplete."
+도커는 리눅스 기반으로 작동하는데, 윈도우에서 리눅스를 실행시켜주는 WSL2엔진이 최신버전이 아니거나  설치 되지 않아서 발생한 오류 
+-> WSL2 커널 업데이트 wsl --update 사용, 윈도우 기능 켜기/끄기 '가상 머신 플랫폼' 항목이 체크되어 있는지 확인했습니다
+Docker 설정변경: Docker Desktop 설정에서 "Use the WSL2 based engine"옵션을 활성화하여 원도우와 리눅스가 잘 연결되도록 설정했습니다.
