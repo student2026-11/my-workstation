@@ -124,6 +124,7 @@ b1c818f179ba5d0a76b251a2c5d3a56a25178a4b42443c9db7891a50fbca7bb9
   3. 브라우저 접속 시 수정했던 내용("수정 성공!")이 그대로 출력됨.
 
 **결론: 도커 바인드 마운트를 통해 컨테이너의 생명주기와 별개로 데이터를 안전하게 관리할 수 있음을 증명함.**
+
 ## 8. Git 설정 및 GitHub/VSCode 연동 증거
 
 # 사용자 설정
@@ -140,7 +141,7 @@ user.name=student2026-**
 user.email=newparangse****@gmail.com
 
 # 원격 저장소 연결 정보
-remote.origin.url=https://github.com/student2026-11/my-workstation.git
+remote.origin.url=https://github.com/student2026-**/my-workstation.git
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 
 # 브랜치 추적 정보
