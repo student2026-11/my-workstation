@@ -24,6 +24,8 @@ cd my-workstation
 권한 목록 및 현재 권한 확인 : ls -la
 실행 권한(x)추가 : chmod +x 파일명
 
+![alt text](image-5.png)
+
 # 폴더 구조 및 파일 생성 (PowerShell)
 mkdir app
 ni Dockerfile, .gitignore, readme.md -ItemType File
