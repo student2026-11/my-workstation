@@ -91,8 +91,11 @@ Unable to find image 'nginx:alpine' locally
 Status: Downloaded newer image for nginx:alpine
 58e88e4a431136648ca449588946151ba7a9acf6279453083e22cb1c127ae806
 
+![alt text](image-8.png)
+
 ### 최종 실행 확인
 현재 두 개의 웹 서버가 서로 다른 방식으로 정상 작동 중임을 확인했습니다.
+![alt text](image-7.png)
 
 ```bash
 PS C:\Users\newparangse8503\my-workstation> docker ps
@@ -100,7 +103,7 @@ CONTAINER ID   IMAGE           COMMAND                   CREATED          STATUS
 58e88e4a4311   nginx:alpine    "/docker-entrypoint.…"   7 minutes ago    Up 7 minutes    0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   my-bind-test
 63385be092ee   my-web-server   "/docker-entrypoint.…"   29 minutes ago   Up 29 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-container
 ```
-![alt text](image-7.png)
+
 
 ### 영속성 검증 터미널 로그
 컨테이너를 삭제하고 새로운 컨테이너(`my-final-test`)를 생성하여 데이터가 유지되는지 확인한 실제 로그입니다.
@@ -111,6 +114,7 @@ PS C:\Users\newparangse8503\my-workstation> docker stop my-bind-test
 my-bind-test
 PS C:\Users\newparangse8503\my-workstation> docker rm my-bind-test
 my-bind-test
+
 
 # 2. 컨테이너 삭제 확인 (my-bind-test가 목록에서 사라짐)
 PS C:\Users\newparangse8503\my-workstation> docker ps -a
@@ -127,6 +131,9 @@ b1c818f179ba5d0a76b251a2c5d3a56a25178a4b42443c9db7891a50fbca7bb9
 ## 최종 검증 결과 (데이터 영속성)
 
 새로운 컨테이너를 생성하여 기존 데이터를 연결했을 때, 데이터가 유실되지 않고 그대로 유지됨을 확인했습니다.
+
+
+![alt text](image-10.png)
 
 - **접속 주소**: http://localhost:8082
 - **검증 내용**: 
