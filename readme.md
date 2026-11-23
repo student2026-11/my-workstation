@@ -20,17 +20,19 @@ Docker와 Git을 활용하여 언제 어디서든 동일한 개발 환경을 재
 # 프로젝트 루트 생성
 mkdir my-workstation
 cd my-workstation
-
-권한 목록 및 현재 권한 확인 : ls -la
-실행 권한(x)추가 : chmod +x 파일명
-
-![alt text](image-5.png)
-
-# 폴더 구조 및 파일 생성 (PowerShell)
+ 폴더 구조 및 파일 생성 (PowerShell)
 mkdir app
 ni Dockerfile, .gitignore, readme.md -ItemType File
 ni app/index.html -ItemType File
+
 ```
+
+권한 목록 및 현재 권한 확인 : ls -la
+실행 권한(x)추가 : chmod +x 파일명 
+
+![alt text](image-5.png)
+
+
 ## 4.Docker 운영/검증 로그
 # Docker 설치 및 서비스 상태 확인
 -     docker --version
@@ -48,6 +50,7 @@ ni app/index.html -ItemType File
 ### 1) 이미지 빌드 (Build)
 - **명령어**: `docker build -t my-web-server .`
 - **결과 로그**:
+
   ```bash
   [+] Building 4.9s (7/7) FINISHED docker:desktop-linux
   => [internal] load build definition from Dockerfile
@@ -66,6 +69,7 @@ docker run -d -p 8080:80 --name my-web-container my-web-server
 - **터미널 확인 (`docker ps`)**:
   컨테이너가 정상적으로 실행 중이며, 8080 포트가 매핑된 것을 확인했습니다.
   ```bash
+
   CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS         PORTS                                     NAMES
   63385be092ee   my-web-server   "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-container
 
@@ -186,8 +190,10 @@ To https://github.com/student2026-11/my-workstation.git
 도커는 리눅스 기반으로 작동하는데, 윈도우에서 리눅스를 실행시켜주는 WSL2엔진이 최신버전이 아니거나  설치 되지 않아서 발생한 오류 
 -> WSL2 커널 업데이트 wsl --update 사용, 윈도우 기능 켜기/끄기 '가상 머신 플랫폼' 항목이 체크되어 있는지 확인했습니다
 Docker 설정변경: Docker Desktop 설정에서 "Use the WSL2 based engine"옵션을 활성화하여 원도우와 리눅스가 잘 연결되도록 설정했습니다.
+```
 
 Git 설정 및 GitHub/VSCode 연동 증거
+
 ![alt text](image-4.png)
 
 보안 및 개인정보 보호
