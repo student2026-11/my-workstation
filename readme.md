@@ -186,10 +186,13 @@ To https://github.com/student2026-11/my-workstation.git
 -> WSL2 커널 업데이트 wsl --update 사용, 윈도우 기능 켜기/끄기 '가상 머신 플랫폼' 항목이 체크되어 있는지 확인했습니다
 Docker 설정변경: Docker Desktop 설정에서 "Use the WSL2 based engine"옵션을 활성화하여 원도우와 리눅스가 잘 연결되도록 설정했습니다.
 
+Git 설정 및 GitHub/VSCode 연동 증거
+![alt text](image-4.png)
+
 보안 및 개인정보 보호
 
 ![alt text](image-3.png)
 
 
-깃 연동 확인
+도커 연동 확인
 ![alt text](image-1.png)
