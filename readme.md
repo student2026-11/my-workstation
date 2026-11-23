@@ -15,6 +15,7 @@ Docker와 Git을 활용하여 언제 어디서든 동일한 개발 환경을 재
 
 ## 3. 작업 디렉토리 구조
 프로젝트의 기초가 되는 폴더와 설정 파일을 생성했습니다.
+![alt text](image-1.png)
 
 ```powershell
 # 프로젝트 루트 생성
@@ -72,6 +73,7 @@ docker run -d -p 8080:80 --name my-web-container my-web-server
 # 접속 확인
  브라우저에서 http://localhost:8080 접속
  - 성공적으로 접속 됨
+ ![alt text](image-2.png)
 
 ## 7. 바인드 마운트 반영 + 볼륨 영속성 증거 
 # 바인드 마운트 실행 로그
