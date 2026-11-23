@@ -115,7 +115,6 @@ my-bind-test
 PS C:\Users\newparangse8503\my-workstation> docker rm my-bind-test
 my-bind-test
 
-
 # 2. 컨테이너 삭제 확인 (my-bind-test가 목록에서 사라짐)
 PS C:\Users\newparangse8503\my-workstation> docker ps -a
 CONTAINER ID   IMAGE             COMMAND                   CREATED          STATUS                     PORTS                                     NAMES
