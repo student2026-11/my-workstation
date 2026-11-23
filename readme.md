@@ -22,6 +22,9 @@ Docker와 Git을 활용하여 언제 어디서든 동일한 개발 환경을 재
 mkdir my-workstation
 cd my-workstation
 
+권한 목록 및 현재 권한 확인 : ls -la
+실행 권한(x)추가 : chmod +x 파일명
+
 # 폴더 구조 및 파일 생성 (PowerShell)
 mkdir app
 ni Dockerfile, .gitignore, readme.md -ItemType File
