@@ -190,5 +190,6 @@ Docker 설정변경: Docker Desktop 설정에서 "Use the WSL2 based engine"옵�
 
 ![alt text](image-3.png)
 
-도커 연결 확인
+
+깃 연동 확인
 ![alt text](image-1.png)
