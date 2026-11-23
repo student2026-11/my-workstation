@@ -185,3 +185,6 @@ To https://github.com/student2026-11/my-workstation.git
 도커는 리눅스 기반으로 작동하는데, 윈도우에서 리눅스를 실행시켜주는 WSL2엔진이 최신버전이 아니거나  설치 되지 않아서 발생한 오류 
 -> WSL2 커널 업데이트 wsl --update 사용, 윈도우 기능 켜기/끄기 '가상 머신 플랫폼' 항목이 체크되어 있는지 확인했습니다
 Docker 설정변경: Docker Desktop 설정에서 "Use the WSL2 based engine"옵션을 활성화하여 원도우와 리눅스가 잘 연결되도록 설정했습니다.
+
+도커 연결 상태 확인
+![alt text](image-1.png)
