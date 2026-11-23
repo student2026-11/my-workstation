@@ -100,6 +100,7 @@ CONTAINER ID   IMAGE           COMMAND                   CREATED          STATUS
 58e88e4a4311   nginx:alpine    "/docker-entrypoint.…"   7 minutes ago    Up 7 minutes    0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   my-bind-test
 63385be092ee   my-web-server   "/docker-entrypoint.…"   29 minutes ago   Up 29 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-web-container
 ```
+![alt text](image-7.png)
 
 ### 영속성 검증 터미널 로그
 컨테이너를 삭제하고 새로운 컨테이너(`my-final-test`)를 생성하여 데이터가 유지되는지 확인한 실제 로그입니다.
