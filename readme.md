@@ -198,7 +198,7 @@ Git 설정 및 GitHub/VSCode 연동 증거
 
 보안 및 개인정보 보호
 
-![alt text](image-3.png)
+![alt text](image-6.png))
 
 
 도커 연동 확인
