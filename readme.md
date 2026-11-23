@@ -15,7 +15,6 @@ Docker와 Git을 활용하여 언제 어디서든 동일한 개발 환경을 재
 
 ## 3. 작업 디렉토리 구조
 프로젝트의 기초가 되는 폴더와 설정 파일을 생성했습니다.
-![alt text](image-1.png)
 
 ```powershell
 # 프로젝트 루트 생성
@@ -196,3 +195,4 @@ Git 설정 및 GitHub/VSCode 연동 증거
 
 도커 연동 확인
 ![alt text](image-1.png)
+
